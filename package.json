@@ -1,0 +1,37 @@
+{
+  "name": "zenithzone",
+  "version": "1.0.0",
+  "description": "Aplicación Electron con TypeScript",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && electron .",
+    "dev": "npm run build && electron . --inspect=5858",
+    "clean": "rimraf dist",
+    "rebuild": "npm run clean && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarioCanudas/ZenithZone.git"
+  },
+  "keywords": [
+    "electron",
+    "typescript",
+    "desktop",
+    "app"
+  ],
+  "author": "Mario",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MarioCanudas/ZenithZone/issues"
+  },
+  "homepage": "https://github.com/MarioCanudas/ZenithZone#readme",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "electron": "^36.3.2",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.3"
+  }
+}
